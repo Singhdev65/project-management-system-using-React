@@ -1,0 +1,57 @@
+.projects {
+  flex: 0.75;
+  margin-top: 1rem;
+  overflow: scroll;
+}
+
+.projects__card {
+  margin: 0 4rem;
+  margin-bottom: 1rem;
+}
+
+.projects__card > h3 {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 450;
+  padding: 10px;
+  color: #007bff;
+}
+
+.projects__description {
+  display: flex;
+  align-items: center;
+}
+
+.projects__description > p {
+  padding: 10px;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  text-transform: capitalize;
+  margin-right: 1.5rem;
+}
+
+.projects__editmode {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.projects__editmode > textarea {
+  padding: 10px;
+  outline: none;
+  border: 1px solid lightgray;
+  min-height: 20vh;
+  max-height: fit-content;
+}
+
+.projects__editmode > Button {
+  width: fit-content;
+}
+
+.projects__button {
+  padding: 10px;
+  height: 50px;
+  margin-right: 4rem !important;
+  float: right !important;
+}

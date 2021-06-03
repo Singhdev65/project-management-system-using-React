@@ -1,0 +1,38 @@
+.projectList {
+  height: 32rem;
+  margin-top: 2.5rem;
+  padding: 10px;
+  flex: 0.25;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow: scroll !important;
+  box-shadow: 1px 2px 3px #888888 !important;
+}
+
+::-webkit-scrollbar {
+  width: 3px !important;
+  height: 3px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.projectList > h3 {
+  padding: 5px;
+  color: gray;
+}
+
+.projectList__name {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}

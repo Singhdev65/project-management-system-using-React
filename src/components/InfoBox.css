@@ -1,0 +1,17 @@
+.infobox {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  flex: 1;
+  box-shadow: 1px 2px 3px #888888 !important;
+}
+
+.infobox__title {
+  text-align: center;
+}
+
+.infoBox__project {
+  font-weight: 450;
+  padding: 10px;
+  text-align: center;
+}

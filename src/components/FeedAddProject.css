@@ -1,0 +1,33 @@
+.addproject {
+  flex: 0.75;
+  padding: 10px;
+  margin-top: 2.5rem;
+  margin-left: 1.5rem;
+  box-shadow: 1px 2px 3px #888888 !important;
+}
+
+.addproject > h3 {
+  font-weight: 300px;
+  margin: 1rem 10px;
+}
+
+.addproject__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.addproject__body > input {
+  outline: none;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin-bottom: 1.2rem;
+  border-radius: 7px;
+}
+
+.addproject__body > textarea {
+  outline: none;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  min-height: 40vh;
+}
