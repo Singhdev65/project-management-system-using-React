@@ -2,8 +2,9 @@ import { Button, Card, IconButton } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import './Projects.css';
 import EditIcon from '@material-ui/icons/Edit';
-import db from '../firebase';
+import db from '../../../firebase';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import {BrowserRouter as Router} from 'react-router-dom';
 import { useHistory } from 'react-router';
 
 const Projects = () => {
@@ -11,6 +12,8 @@ const Projects = () => {
     const [editMode, setEditMode] = useState(false);
     const [textAreaValue, setTextAreaValue] = useState();
     const history = useHistory();
+
+    console.log(history)
 
     useEffect(() => {
         db.collection("projects").onSnapshot(snapshot =>  setProjects(snapshot.docs.map(doc => ({
@@ -21,10 +24,11 @@ const Projects = () => {
     
     return (
         <div className="projects">
-        
+            <Router>
             <IconButton style={{marginLeft: "4rem"}}>
                 <KeyboardBackspaceIcon fontSize = "large" onClick={() => history.push("/")}/>
             </IconButton >
+            </Router>
         
             {projects.map(({id, data: {name, description}}) => (
                    <Card key={id} className="projects__card">

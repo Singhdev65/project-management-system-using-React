@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import CancelIcon from '@material-ui/icons/Cancel';
 import "./ProjectList.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import db from '../firebase'
+import db from '../../../firebase';
 
 const ProjectsList = () => {
     const [names, setNames] = useState([]);

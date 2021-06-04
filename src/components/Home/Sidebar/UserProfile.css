@@ -1,0 +1,57 @@
+.userprofile {
+  flex: 1;
+  margin: auto 4rem;
+}
+
+.userprofile__card {
+  height: 70vh;
+  box-shadow: 1px 2px 3px #bfbfbf;
+  border: 1px solid lightgray;
+}
+
+.userprofile__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.user__Avatar {
+  height: 10rem !important;
+  width: 10rem !important;
+}
+
+.userprofile__topinfo {
+  margin-left: 1rem;
+}
+
+.userprofile__topinfo > h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #007bff;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+.userprofile__topinfo > h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: gray;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.userprofile__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.userprofile__bottom > input {
+  outline: none;
+  padding: 7px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid gray;
+}

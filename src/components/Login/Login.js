@@ -1,9 +1,9 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
-import { auth, provider } from '../firebase';
-import { useStateValue } from '../StateProvider';
+import { auth, provider } from '../../firebase';
+import { useStateValue } from '../../StateProvider';
 import './Login.css';
-import {actionTypes} from '../reducer';
+import {actionTypes} from '../../reducer';
 
 const Login = () => {
 
