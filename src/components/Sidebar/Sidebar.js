@@ -8,16 +8,16 @@ import PersonIcon from '@material-ui/icons/Person';
 import GroupIcon from '@material-ui/icons/Group';
 import LocalActivityIcon from '@material-ui/icons/LocalActivity';
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
-import { BrowserRouter as Router, useHistory } from 'react-router';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     const history = useHistory();
-    console.log(history)
 
     return (
         <div className="sidebar">
            <div className="sidebar__header">
-           <IconButton onClick={() => history.push("/Feed")}>
+           <IconButton onClick={() => history.push('/')}>
                <DashboardIcon />
            </IconButton>
                <h3>Dashboard</h3>
@@ -25,10 +25,14 @@ const Sidebar = () => {
            
            <div className="sidebar__body">
            <SidebarOption Icon={AddIcon}  title="Add Project" />
-           <SidebarOption Icon={PersonIcon}  title="User Profile " onClick={() => history.push("/UserProfile")}/>
-           <SidebarOption Icon={GroupIcon}  title="Team Member" onClick={() => history.push("/Team")}/>
+           <Link to="/UserProfile">
+           <SidebarOption Icon={PersonIcon}  title="User Profile" />
+           </Link>
+           <Link to="/Team">
+           <SidebarOption Icon={GroupIcon}  title="Team Member" />
+           </Link>
            <SidebarOption Icon={LocalActivityIcon}  title="Active Clients"/>
-           <SidebarOption Icon={AllInclusiveIcon}  title="Clients"/>
+           <SidebarOption Icon={AllInclusiveIcon}  title="About Us"/>
            </div>
         </div>
     )

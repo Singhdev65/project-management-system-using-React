@@ -1,12 +1,12 @@
-import React from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Feed from './components/Feed/Feed';
 import Login from './components/Login/Login';
-import Projects from './components/Home/Feed/Projects';
+import Projects from './components/Feed/Projects'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useStateValue } from './StateProvider';
-import Team from './components/Home/Sidebar/Team';
-import UserProfile from './components/Home/Sidebar/UserProfile';
-import Home from './components/Home/Home';
+import Team from './components/Sidebar/Team';
+import UserProfile from './components/Sidebar/UserProfile';
 
 const App = () => {
   const [{user}] = useStateValue();
@@ -16,10 +16,13 @@ const App = () => {
       <div className="app__body">
       <Router>
       <Switch>
-      <Route to="/" exact component={Home} />
-      <Route to="/Projects" component={Projects} />
-      <Route to="/Team" component={Team} />
-      <Route to="/UserProfile" component={UserProfile} />
+      <Route path="/" exact>
+      <Sidebar />
+      <Feed />
+      </Route>
+      <Route path="/Projects" component={Projects} />
+      <Route path="/Team" component={Team} />
+      <Route path="/UserProfile" component={UserProfile} />
       </Switch>
       </Router>
       </div>       

@@ -15,6 +15,7 @@
   padding: 10px;
   outline: none;
   border: none;
+  color: gray;
 }
 
 .feed__headerRight {
@@ -30,13 +31,12 @@
 
 .feed__body {
   max-height: fit-content;
-  height: 86%;
+  height: 87%;
   overflow: scroll;
   background-color: whitesmoke;
 }
 
 .feed__body > h3 {
-  margin-top: 1rem;
   margin-left: 1rem;
   padding: 10px;
   font-family: "Courier New", Courier, monospace;
@@ -52,13 +52,11 @@
 }
 
 .feed__footer {
-  position: sticky;
-  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: whitesmoke;
+  margin-top: 1rem;
 }
 
 .feed__footer > h4 {

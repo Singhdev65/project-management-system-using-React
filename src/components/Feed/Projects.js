@@ -2,7 +2,7 @@ import { Button, Card, IconButton } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import './Projects.css';
 import EditIcon from '@material-ui/icons/Edit';
-import db from '../../../firebase';
+import db from '../../firebase';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import {BrowserRouter as Router} from 'react-router-dom';
 import { useHistory } from 'react-router';

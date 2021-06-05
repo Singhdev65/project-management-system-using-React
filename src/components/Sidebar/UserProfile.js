@@ -1,13 +1,18 @@
-import { Avatar, Button, Card } from '@material-ui/core';
+import { Avatar, Button, Card, IconButton } from '@material-ui/core';
 import React from 'react';
 import './UserProfile.css';
-import {useStateValue} from '../../../StateProvider';
+import {useStateValue} from '../../StateProvider';
+import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
+import { useHistory } from 'react-router';
 
 const UserProfile = () => {
     const [{user}] = useStateValue();
-    console.log(user);
+    const history = useHistory();
     return (
         <div className="userprofile">
+        <IconButton style={{marginLeft: "4rem"}}>
+                <KeyboardBackspaceIcon fontSize = "large" onClick={() => history.push("/")}/>
+            </IconButton >
                 <Card className="userprofile__card">
                     <div className="userprofile__top">
                     <Avatar src={user.photoURL} className="user__Avatar"/>

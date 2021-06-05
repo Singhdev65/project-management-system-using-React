@@ -3,8 +3,6 @@ import './SidebarOption.css';
 import { IconButton } from '@material-ui/core';
 
 const SidebarOption = ({Icon, title}) => {
-
-
     return (
         <div className="sidebarOption">
             <IconButton>

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import CancelIcon from '@material-ui/icons/Cancel';
 import "./ProjectList.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import db from '../../../firebase';
+import db from '../../firebase';
 
 const ProjectsList = () => {
     const [names, setNames] = useState([]);
@@ -22,7 +22,7 @@ const ProjectsList = () => {
 
     return (
         <Card className="projectList">
-        <Link to="/Projects">
+        <Link to="Projects" >
         <h3>All Projects</h3> 
         {names.map(({id, data: {name, description}}) => (
             <Card 
@@ -32,8 +32,8 @@ const ProjectsList = () => {
                 <CancelIcon style={{color: "red"}}/>
             </IconButton>
             </Card>
-        ))}       
-        </Link>                
+        ))} 
+        </Link>                    
         </Card>
     )
 }

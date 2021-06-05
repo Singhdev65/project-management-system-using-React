@@ -1,5 +1,6 @@
 .team {
-  flex: 0.75;
+  flex: 1;
+  background-color: whitesmoke;
 }
 
 .team > h4 {

@@ -1,7 +1,8 @@
 .addproject {
   flex: 0.75;
+  height: 35rem;
   padding: 10px;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   margin-left: 1.5rem;
   box-shadow: 1px 2px 3px #888888 !important;
 }

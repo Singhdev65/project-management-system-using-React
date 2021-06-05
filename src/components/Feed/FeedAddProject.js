@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./FeedAddProject.css";
 import { Button, Card } from '@material-ui/core';
-import db from '../../../firebase';
+import db from '../../firebase';
 
 
 const FeedAddProject = () => {

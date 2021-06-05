@@ -4,10 +4,10 @@ import './Feed.css';
 import SearchIcon from '@material-ui/icons/Search';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import InfoBox from './InfoBox';
+import InfoBox from '../Feed/InfoBox';
 import FeedAddProject from '../Feed/FeedAddProject';
 import ProjectsList from '../Feed/ProjectsList';
-import  {useStateValue} from '../../../StateProvider';
+import {useStateValue} from '../../StateProvider'
 
 const Feed = () => {
     const [{user}] = useStateValue();
